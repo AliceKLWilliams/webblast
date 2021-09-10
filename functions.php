@@ -5,10 +5,8 @@ require __DIR__ . '/vendor/autoload.php';
 include "app/cpt.php";
 
 function site_scripts(){
-	wp_enqueue_script('timeline', get_theme_file_uri("/js/timeline.js"), NULL, microtime(), true);
-	wp_enqueue_script('reviews', get_theme_file_uri("/js/reviews.js"), NULL, microtime(), true);
-	wp_enqueue_script('favourites', get_theme_file_uri("/js/favourites.js"), NULL, microtime(), true);
-	wp_enqueue_script('navigation', get_theme_file_uri("/js/navigation.js"), NULL, microtime(), true);
+	wp_enqueue_script('main', get_theme_file_uri('dist/js/main.js'), NULL, microtime(), true);
+	
 	wp_enqueue_style("google_fonts", "//fonts.googleapis.com/css?family=Montserrat");
 	wp_enqueue_style("font_awesome", "//use.fontawesome.com/releases/v5.3.1/css/all.css");
 	wp_enqueue_style("museum_styles", get_stylesheet_uri(), NULL, microtime());
