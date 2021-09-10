@@ -1,0 +1,55 @@
+
+.post{
+	display:flex;
+	flex-direction: column;
+
+	&__name{
+		margin-bottom: 1rem;
+	}
+
+	&__img{
+		max-width:12em;
+		margin-right:0em;
+		margin-bottom: 2em;
+	}
+
+	&__link{
+		color: $primary;
+	}
+
+	&__desc{
+		color:$dark-gray;
+		margin-bottom:0.5em;
+	}
+
+	@include phone{
+		flex-direction: row;
+		align-items:center;
+		&__img{
+			margin-bottom: 0em;
+			margin-right: 2em;
+		}
+	}
+
+}
+
+.meta{
+	margin: 0.5em 0em;
+	color: $light-gray;
+
+	&__item{
+		margin-right: 1em;
+	}
+
+	&__icon{
+		margin-right: 0.5em;
+	}
+
+	&__link{
+		color: $light-gray;
+
+		&:visited{
+			color: $light-gray;
+		}
+	}
+}

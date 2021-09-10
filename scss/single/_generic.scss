@@ -1,0 +1,102 @@
+.header{
+	background-color: $primary;
+	padding:3em 0em 5em 0em;
+
+	padding-left:15%;
+	padding-right:15%;
+
+	color: $white;
+	margin-bottom: 3em;
+
+	&__title{
+		margin-bottom: 1rem;
+	}
+
+	&__tagline{
+		margin-bottom: 1rem;
+	}
+
+	&__main{
+		display:flex;
+		flex-direction: column;
+		align-items:center;
+		margin-bottom: 4em;
+	}
+
+	&__meta{
+		*{
+			margin-bottom: 0.25em;
+		}
+
+		a{
+			color: $white;
+
+			&:visited{
+				color: $white;
+			}
+		}
+	}
+
+	@include tablet{
+		&__main{
+			flex-direction: row;
+		}
+	}
+}
+
+
+.content{
+	width:70%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 6em;
+	margin-top: 2em;
+}
+
+.section{
+	width:70%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 6em;
+
+	&__header{
+		margin-bottom: 3rem;
+	}
+}
+
+.description{
+	color:$dark-gray;
+}
+
+.favourite-btn{
+	float:right;
+}
+
+.favourite-btn[data-favourited="yes"] .far{
+	display:none;
+}
+
+.favourite-btn:not([data-favourited="yes"]) .fas{
+	display:none;
+}
+
+.favourite-btn[data-favourited="yes"]:hover{
+	.far{
+		display:inline;
+	}
+
+	.fas{
+		display:none;
+	}
+} 
+
+.favourite-btn:not([data-favourited="yes"]):hover{
+	.far{
+		display:none;
+	}
+
+	.fas{
+		display:inline;
+	}
+} 
+

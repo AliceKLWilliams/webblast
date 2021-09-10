@@ -1,0 +1,68 @@
+.archive{
+	&__left{
+		height:100vh;
+		width: 100%;
+
+		background-color: $primary;
+		color: $white;
+
+		position: relative;
+	}
+
+	&__right{
+		background: $white;
+	}
+
+	&__intro{
+		left:5%;
+		width: 90%;
+		position: absolute;
+		top:50%;
+		transform:translateY(-50%);
+	}
+
+	@include tablet{
+		&__left{
+			width:50vw;
+			position:fixed;
+		}
+
+		&__right{
+			margin-left:50vw;
+		}
+	}
+}
+
+.posts{
+	width:90%;
+	margin: 0 auto;
+
+	padding-top:3em;
+
+	display:grid;
+	grid-gap: 5em;
+}
+
+
+// PAGINATION STYLING
+
+.pagination{
+	text-align:center;
+}
+
+.page-numbers{
+	color:black;
+	margin:0em 0.5rem;
+
+	font-weight: 700;
+
+	&:hover{
+		color:$primary;
+	}
+
+	&.current{
+		color:$primary;
+		font-size:1.6rem;
+	}
+}
+

@@ -1,0 +1,74 @@
+
+.one-third{
+	width:100%;
+	margin-top: 2em;
+	
+
+	@include tablet{
+		width:30%;
+		padding:2em;
+
+		margin-top: 0;
+	}
+}
+
+.two-thirds{
+	width:100%;
+
+	@include tablet{
+		width:70%;
+		padding:2em;
+	}
+}
+
+.user{
+	&__image{
+		max-width:100%;
+
+		display: block;
+		margin:0 auto;
+
+		margin-bottom: 1em;
+	}
+
+	&__section{
+		margin-bottom: 6em;
+	}
+
+	&__social{
+		font-size:1.6rem;
+		list-style-type: none;
+	}
+
+	&__icon{
+		margin-right: 0.75rem;
+		color:$primary;
+	}
+
+	&__link{
+		margin:0.5rem 0em;
+		display: inline-block;
+
+		color:#222;
+
+		&:visited{
+			color:#222;
+		}
+
+	}
+
+}
+
+.thirds{
+	width:70%;
+	margin:0 auto;
+	margin-top: 2em;
+	margin-bottom: 6em;
+
+	display:block;
+	flex-direction: row;
+
+	@include tablet{
+		display:flex;
+	}
+}

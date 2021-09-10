@@ -1,0 +1,56 @@
+.btn{
+	font-size:1.6rem;
+	padding:1rem 1.5rem;
+
+	display: inline-block;
+
+	color: $primary;
+	border: 2px solid $primary;
+	border-radius: 1rem;
+
+	background-color: transparent;
+
+	cursor:pointer;
+
+	transition: .2s;
+
+	
+	&:hover{
+		transform: scale(1.1);
+	}
+
+	&--plain{
+		border:none;
+		padding:0;
+
+		&:hover{
+			transform: none;
+		}
+	}
+
+	&--light{
+		border: 2px solid  $white;
+		color:  $white;
+	}
+
+	&--filled{
+		color:  $white;
+		background-color: $primary;
+	}
+
+	&--secondary{
+		border:none;
+		color:$secondary;
+	}
+
+	&--hidden{
+		display:none;
+	}
+
+
+}
+
+.btn-text{
+	font-size:1.6rem;
+	background: transparent;
+}

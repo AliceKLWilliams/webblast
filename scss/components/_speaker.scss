@@ -1,0 +1,62 @@
+$border-radius: 5px;
+
+.speaker-overlayed{
+	position: relative;
+	text-align: center;
+
+	&__img{
+		width:100%;
+		display:block;
+	}
+
+	&::after{
+		content:"";
+		position:absolute;
+		top:0;
+		bottom:0;
+		left:0;
+		right:0;
+
+		background-color: $primary;
+		opacity: 0;
+		transition:0.3s;
+	}
+
+	&__overlay{
+		position: absolute;
+		top:50%;
+		left:10%;
+		width:80%;
+		transform: translateY(-50%);
+		color: $white;
+
+		opacity:0;
+
+		z-index:2;
+
+		transition:0.3s;
+	}
+
+	&__name{
+		margin-bottom: 1rem;
+	}
+
+	$this: &;
+
+	&:hover{
+		&::after{
+			opacity: 0.9;
+		}
+
+		#{$this}__overlay{
+			opacity: 1;
+		}
+	}
+}
+
+.speaker-events{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: 3em;
+	
+}
