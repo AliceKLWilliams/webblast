@@ -8,7 +8,7 @@
 				<p>Running web workshops and events since 1998.</p>
 			</div>
 		</div>
-		<img src="<?php echo get_theme_file_uri('/images/splash.jpg')?>" alt="" class="landing__right">
+		<img src="<?php echo get_theme_file_uri('dist/img/splash.jpg')?>" alt="" class="landing__right">
 	</div>
 
 	<?php
