@@ -6,10 +6,10 @@ include "app/cpt.php";
 
 function site_scripts(){
 	wp_enqueue_script('main', get_theme_file_uri('dist/js/main.js'), NULL, microtime(), true);
-	
+
 	wp_enqueue_style("google_fonts", "//fonts.googleapis.com/css?family=Montserrat");
 	wp_enqueue_style("font_awesome", "//use.fontawesome.com/releases/v5.3.1/css/all.css");
-	wp_enqueue_style("museum_styles", get_stylesheet_uri(), NULL, microtime());
+	wp_enqueue_style("main", get_theme_file_uri('dist/css/main.css'), NULL, microtime());
 
 	wp_localize_script("favourites", "data", array(
 		"root_url" => get_site_url(),
@@ -27,7 +27,7 @@ add_action("wp_enqueue_scripts", "site_scripts");
 function login_styles(){
 	wp_enqueue_style("google_fonts", "//fonts.googleapis.com/css?family=Montserrat");
 	wp_enqueue_style("font_awesome", "//use.fontawesome.com/releases/v5.3.1/css/all.css");
-	wp_enqueue_style("museum_styles", get_stylesheet_uri(), NULL, microtime());
+	wp_enqueue_style("main", get_theme_file_uri('dist/css/main.css'), NULL, microtime());
 }
 
 add_action("login_enqueue_scripts", "login_styles");
