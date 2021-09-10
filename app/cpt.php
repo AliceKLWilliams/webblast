@@ -8,7 +8,8 @@ add_action('init', function() {
 		'menu_icon' => 'dashicons-calendar-alt'
 	]);
 	register_extended_post_type('favourite', [
-		'menu_icon' => 'dashicons-star-filled'
+		'menu_icon' => 'dashicons-star-filled',
+		'has_archive' => false,
 	]);
 	register_extended_post_type('review', [
 		'menu_icon' => 'dashicons-welcome-write-blog'
