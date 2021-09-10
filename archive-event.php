@@ -1,6 +1,9 @@
 <?php get_header(); 
 
-	archive_left("Current Events", "Check out what events we have going on.");
+	get_template_part('partials/page-intro', null, [
+		'title' => 'Current Events',
+		'description' => 'Check out what events we have going on.'
+	]);
 
 ?>
 	

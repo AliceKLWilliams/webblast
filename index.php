@@ -1,6 +1,9 @@
 <?php get_header(); 
 
-archive_left("Updates", "Read our newest updates.");
+get_template_part('partials/page-intro', null, [
+	'title' => 'Updates',
+	'description' => 'Read our newest updates.'
+]);
 
 ?>
 

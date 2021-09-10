@@ -1,6 +1,9 @@
 <?php get_header(); 
 
-archive_left("Past Events", "See what we've been up to.");
+get_template_part('partials/page-intro', null, [
+	'title' => 'Past Events',
+	'description' => "See what we've been up to."
+]);
 
 ?>
 

@@ -1,6 +1,9 @@
 <?php get_header(); 
 
-archive_left("Future Events", "See what we have up and coming.");
+get_template_part('partials/page-intro', null, [
+	'title' => 'Future Events',
+	'description' => 'See what we have up and coming.'
+]);
 
 ?>
 

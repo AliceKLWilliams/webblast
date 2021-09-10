@@ -1,6 +1,9 @@
 <?php get_header(); 
 
-	archive_left("Speakers", "Check out our talented speakers.");
+	get_template_part('partials/page-intro', null, [
+		'title' => 'Speakers',
+		'description' => 'Check out our talented speakers.'
+	]);
 
 ?>
 

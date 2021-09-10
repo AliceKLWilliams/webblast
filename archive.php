@@ -1,6 +1,9 @@
 <?php get_header(); 
 
-archive_left(the_archive_title(), the_archive_description());
+get_template_part('partials/page-intro', null, [
+	'title' => get_the_archive_title(),
+	'description' => get_the_archive_description()
+]);
 
 ?>
 

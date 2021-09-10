@@ -7,7 +7,10 @@ if(!is_user_logged_in()){
 
 get_header(); 
 
-archive_left("Your Favourites", "See your favourited events.");
+get_template_part('partials/page-intro', null, [
+	'title' => 'Your Favourites',
+	'description' => 'See your favourited events.'
+]);
 
 ?>
 
