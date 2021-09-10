@@ -11,12 +11,7 @@ function site_scripts(){
 	wp_enqueue_style("font_awesome", "//use.fontawesome.com/releases/v5.3.1/css/all.css");
 	wp_enqueue_style("main", get_theme_file_uri('dist/css/main.css'), NULL, microtime());
 
-	wp_localize_script("favourites", "data", array(
-		"root_url" => get_site_url(),
-		"nonce" => wp_create_nonce("wp_rest")
-	));
-
-	wp_localize_script("reviews", "data", array(
+	wp_localize_script("main", "data", array(
 		"root_url" => get_site_url(),
 		"nonce" => wp_create_nonce("wp_rest")
 	));
