@@ -36,7 +36,7 @@
 		<div class="events">
 			<?php while($upcomingEvents->have_posts()) {
 				$upcomingEvents->the_post();
-				get_template_part("components/content-event");
+				get_template_part("partials/content-event");
 			} wp_reset_postdata(); ?>
 
 			<?php if(!$upcomingEvents->found_posts){ ?>

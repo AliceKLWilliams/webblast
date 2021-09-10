@@ -26,7 +26,7 @@ archive_left("Future Events", "See what we have up and coming.");
 		<?php } else {
 			while($futureEvents->have_posts()){
 				$futureEvents->the_post();
-				get_template_part("components/content-event");
+				get_template_part("partials/content-event");
 			} wp_reset_postdata(); 
 		} ?>
 

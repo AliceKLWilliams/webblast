@@ -33,7 +33,7 @@ archive_left("Your Favourites", "See your favourited events.");
 	
 			while($events->have_posts()){
 				$events->the_post(); 
-				get_template_part("components/content-event");
+				get_template_part("partials/content-event");
 			} ?>
 			
 			<div class="pagination">

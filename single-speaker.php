@@ -55,7 +55,7 @@
 			<div class="speaker-events">
 				<?php while($speakerEvents->have_posts()) {
 					$speakerEvents->the_post(); 
-					get_template_part("components/content-event");
+					get_template_part("partials/content-event");
 				}  wp_reset_postdata(); ?>
 			</div>
 		</section>

@@ -27,7 +27,7 @@
 			<?php while(have_posts()) {
 				the_post(); 
 				if(get_post_type() == "event"){ 
-					get_template_part("components/content-event");
+					get_template_part("partials/content-event");
 				} 
 			} ?>
 		</div>

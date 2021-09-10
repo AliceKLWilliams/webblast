@@ -11,7 +11,7 @@
 		<?php } else { 
 			while(have_posts()){
 				the_post();
-				get_template_part("components/content-event");
+				get_template_part("partials/content-event");
 			} 
 		} ?>
 		

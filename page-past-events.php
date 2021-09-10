@@ -26,7 +26,7 @@ archive_left("Past Events", "See what we've been up to.");
 		<?php } else { 	
 			while($pastEvents->have_posts()){
 				$pastEvents->the_post();
-				get_template_part("components/content-event"); 
+				get_template_part("partials/content-event"); 
 			}
 		} wp_reset_postdata(); ?>
 
