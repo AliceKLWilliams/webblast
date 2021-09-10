@@ -1,5 +1,7 @@
 <?php 
 
+require __DIR__ . '/vendor/autoload.php';
+
 include "app/cpt.php";
 
 function site_scripts(){
